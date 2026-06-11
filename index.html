@@ -7,24 +7,23 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: #0a0a0a; color: #e5e5e5; }
         
-        header { padding: 50px 20px; text-align: center; border-bottom: 2px solid #d4af37; background: #000; }
+        header { padding: 40px 20px; text-align: center; border-bottom: 2px solid #d4af37; background: #000; }
         h1 { font-size: 3.5em; color: #d4af37; margin-bottom: 10px; }
         
+        /* الزرار الصغير الجديد */
+        .dev-btn { 
+            display: inline-block; padding: 6px 20px; margin-top: 10px;
+            border: 1px solid #d4af37; color: #d4af37; text-decoration: none; 
+            font-size: 0.9em; transition: 0.3s; 
+        }
+        .dev-btn:hover { background: #d4af37; color: #000; }
+
         .main-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-        
-        /* الشبكة اللي فيها الأقسام */
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         
         .card { background: #171717; padding: 30px; border: 1px solid #333; text-align: center; transition: 0.3s; text-decoration: none; color: #e5e5e5; }
         .card:hover { border-color: #d4af37; transform: translateY(-5px); background: #1a1a1a; }
         .card h2 { color: #d4af37; margin-bottom: 10px; }
-
-        /* البانر التعريفي بالمطور */
-        .dev-banner { margin-top: 60px; padding: 40px; background: #000; border: 2px solid #d4af37; text-align: center; }
-        .dev-banner h2 { color: #d4af37; font-size: 2em; margin-bottom: 15px; }
-        .dev-banner p { color: #a3a3a3; max-width: 700px; margin: 0 auto 20px; }
-        .profile-link { display: inline-block; padding: 10px 25px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; transition: 0.3s; }
-        .profile-link:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
@@ -32,6 +31,7 @@
     <header>
         <h1>CORE NEWS</h1>
         <p>الخبر من جوهره</p>
+        <a href="dev-profile/index.html" class="dev-btn">عن المطور</a>
     </header>
 
     <div class="main-container">
@@ -41,12 +41,6 @@
             <a href="tech.html" class="card"><h2>⚡ التكنولوجيا</h2><p>عالم الذكاء</p></a>
             <a href="nature.html" class="card"><h2>🌿 الطبيعة</h2><p>موسوعة الأرض</p></a>
         </div>
-
-        <section class="dev-banner">
-            <h2>عن المطور</h2>
-            <p>أهلاً بك، أنا <strong>ياسين أحمد</strong>، مطور هذه المنصة. أعمل على تقديم تجربة إخبارية رقمية فريدة تجمع بين التصميم الفاخر والمحتوى الهادف.</p>
-            <a href="dev-profile/index.html" class="profile-link">تصفح ملف المطور</a>
-        </section>
     </div>
 
 </body>
