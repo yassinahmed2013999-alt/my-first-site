@@ -2,38 +2,45 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Core News | الرئيسية</title>
+    <title>Core News</title>
     <style>
-        body { background: #000; color: #fff; font-family: sans-serif; padding: 20px; }
-        header { text-align: center; padding: 40px; border-bottom: 2px solid #d4af37; }
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; padding: 20px; }
+        /* زرار المطور الصغير */
+        .dev-btn { display: inline-block; padding: 5px 15px; border: 1px solid #d4af37; color: #d4af37; cursor: pointer; background: transparent; margin-bottom: 20px; }
         
-        /* الصندوق بتاعك (المطور) */
-        .profile-box { border: 2px solid #d4af37; padding: 20px; max-width: 800px; margin: 20px auto; background: #111; text-align: center; }
+        /* تصميم نافذة المعلومات (المودال) */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+        .modal-content { background: #111; border: 2px solid #d4af37; padding: 40px; margin: 15% auto; width: 80%; max-width: 500px; }
+        .close-btn { color: #d4af37; cursor: pointer; display: block; margin-top: 20px; }
         
-        /* شبكة الأقسام */
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { border: 1px solid #333; padding: 20px; text-align: center; background: #171717; color: #fff; text-decoration: none; }
-        .card:hover { border-color: #d4af37; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #333; padding: 20px; background: #171717; color: #fff; text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>CORE NEWS</h1>
-        <p>الخبر من جوهره</p>
-    </header>
+    <button class="dev-btn" onclick="openModal()">عن المطور</button>
+    <h1>CORE NEWS</h1>
 
-    <div class="profile-box">
-        <h2>ياسين أحمد | المطور الرئيسي</h2>
-        <p>أهلاً بك في منصتي الإخبارية. أنا ياسين، المطور الذي قام ببناء هذا الموقع ليكون مرجعك الأول لكل ما هو جديد.</p>
+    <div id="devModal" class="modal">
+        <div class="modal-content">
+            <h2>ياسين أحمد</h2>
+            <p>المطور الرئيسي لموقع Core News. هذا الموقع يجمع خلاصة الأخبار العالمية في مكان واحد.</p>
+            <span class="close-btn" onclick="closeModal()">إغلاق</span>
+        </div>
     </div>
 
     <div class="grid-container">
-        <a href="space.html" class="card"><h2>🌌 الفضاء</h2></a>
-        <a href="tech.html" class="card"><h2>⚡ التكنولوجيا</h2></a>
-        <a href="nature.html" class="card"><h2>🌿 الطبيعة</h2></a>
-        <a href="sports.html" class="card"><h2>⚽ الرياضة</h2></a>
+        <div class="card"><h2>🌌 الفضاء</h2></div>
+        <div class="card"><h2>⚡ التكنولوجيا</h2></div>
+        <div class="card"><h2>🌿 الطبيعة</h2></div>
+        <div class="card"><h2>⚽ الرياضة</h2></div>
     </div>
+
+    <script>
+        function openModal() { document.getElementById('devModal').style.display = "block"; }
+        function closeModal() { document.getElementById('devModal').style.display = "none"; }
+    </script>
 
 </body>
 </html>
