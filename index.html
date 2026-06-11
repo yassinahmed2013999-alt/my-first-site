@@ -6,19 +6,24 @@
     <title>Core News | خلاصة الأخبار</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #0f172a; color: #f1f5f9; font-family: 'Segoe UI', sans-serif; }
         
-        header { padding: 40px 20px; text-align: center; background: linear-gradient(135deg, #1e293b, #0f172a); border-bottom: 3px solid #38bdf8; }
-        h1 { font-size: 3em; color: #38bdf8; letter-spacing: 3px; font-weight: 800; }
+        /* خلفية سوداء ملكية */
+        body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Segoe UI', sans-serif; }
+        
+        /* هيدر بلمسة ذهبية خفيفة */
+        header { padding: 40px 20px; text-align: center; background: #000; border-bottom: 3px solid #d4af37; }
+        h1 { font-size: 3.5em; color: #d4af37; letter-spacing: 5px; font-weight: 900; text-shadow: 2px 2px 10px rgba(212, 175, 55, 0.3); }
         
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px; max-width: 1200px; margin: 0 auto; }
         
-        .card { background: #1e293b; padding: 30px; border-radius: 15px; text-align: center; transition: 0.4s; border: 1px solid #334155; text-decoration: none; color: white; }
-        .card:hover { transform: translateY(-10px); border-color: #38bdf8; box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2); }
-        .card h2 { font-size: 1.8em; margin-bottom: 10px; }
-        .card p { color: #94a3b8; }
+        /* كروت رمادي داكن مع حواف ذهبية */
+        .card { background: #171717; padding: 30px; border-radius: 0; text-align: center; transition: 0.4s; border: 1px solid #333; text-decoration: none; color: white; }
+        .card:hover { transform: translateY(-5px); border-color: #d4af37; background: #1a1a1a; }
+        
+        .card h2 { font-size: 1.8em; margin-bottom: 10px; color: #d4af37; }
+        .card p { color: #a3a3a3; }
 
-        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.9em; border-top: 1px solid #1e293b; }
+        footer { text-align: center; padding: 20px; color: #525252; font-size: 0.9em; border-top: 1px solid #333; }
     </style>
 </head>
 <body>
