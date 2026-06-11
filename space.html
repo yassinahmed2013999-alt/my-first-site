@@ -3,226 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وكالة الفضاء الكبرى | أرشيف الكون السحيق</title>
+    <title>بوابة الفضاء العملاقة</title>
     <style>
         body {
-            background-color: #06060c;
-            color: #e2e8f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
+            background-color: #030308;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 30px;
             margin: 0;
-            line-height: 1.9;
+            line-height: 1.6;
         }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(180deg, #0b0b1e, #131332);
-            border-radius: 24px;
-            margin-bottom: 40px;
-            border: 2px solid #3b82f6;
-            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
-        }
-        .container {
-            max-width: 1000px;
+        .mega-container {
+            max-width: 1200px;
             margin: 0 auto;
         }
-        .space-card {
-            background: rgba(19, 19, 45, 0.6);
-            border: 1px solid #1e1e4b;
+        /* العناوين والتقارير الضخمة */
+        .main-title {
+            font-size: 65px; /* خط عملاق جداً لرأس الصفحة */
+            color: #3b82f6;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+            font-weight: 900;
+        }
+        .main-subtitle {
+            font-size: 28px; /* تقرير فرعي ضخم */
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 45px; /* عنوان الخبر ضخم جداً */
+            color: #a855f7;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            border-bottom: 4px solid #a855f7;
+            padding-bottom: 15px;
+            font-weight: 800;
+        }
+        /* صور حقيقية عملاقة بمستوى الشاشة */
+        .giant-img {
+            width: 100%;
+            height: 650px; /* طول الصورة ضخم جداً للرؤية الشاملة */
+            object-fit: cover;
+            border-radius: 24px;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 15px 50px rgba(59, 130, 246, 0.4);
+            margin-bottom: 30px;
+        }
+        /* نصوص التقارير الكبيرة والواضحة */
+        .giant-report {
+            font-size: 26px; /* خط التقرير والكلام كبير جداً وسهل القراءة */
+            color: #e2e8f0;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 35px;
             border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-            backdrop-filter: blur(10px);
-            transition: all 0.4s ease;
+            border-left: 8px solid #3b82f6;
+            margin-bottom: 60px;
+            text-align: justify;
         }
-        .space-card:hover {
-            transform: translateY(-8px);
-            border-color: #8b5cf6;
-            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
+        .data-badge {
+            display: block;
+            background: #1e1e38;
+            color: #00ffcc;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            border: 1px dashed #00ffcc;
         }
-        .space-tag {
+        .btn-back {
+            display: inline-block;
             background: linear-gradient(90deg, #3b82f6, #8b5cf6);
             color: white;
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 13px;
+            padding: 20px 60px;
+            font-size: 24px;
             font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-            letter-spacing: 0.5px;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.5);
+            margin: 50px 0;
+            transition: 0.3s;
         }
-        .space-img {
-            width: 100%;
-            max-height: 450px;
-            object-fit: cover;
-            border-radius: 16px;
-            margin: 20px 0;
-            border: 1px solid #2d2d6b;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-        }
-        .science-box {
-            background-color: #0b0b1a;
-            border-right: 4px solid #8b5cf6;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 6px 16px 16px 6px;
-            font-size: 15px;
-            color: #94a3b8;
+        .btn-back:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="mega-container">
 
-        <header>
-            <span style="background: #00ecff; color: #000; padding: 6px 20px; font-weight: bold; border-radius: 20px; font-size: 13px; text-transform: uppercase;">📡 رصد حي ومستمر من أعماق المجرة</span>
-            <h1 style="font-size: 42px; color: #ffffff; margin: 20px 0 10px 0; text-shadow: 0 0 20px rgba(59,130,246,0.6);">🌌 موسوعة الفضاء والكون الشاملة</h1>
-            <p style="color: #94a3b8; font-size: 19px; max-width: 800px; margin: 0 auto;">اكتشف أسرار الثقوب السوداء، كواليس رحلات المريخ الحالية، أحدث صور تليسكوبات ناسا الفضائية، وتقارير الفيزياء الفلكية ببيانات حقيقية وعلماء عالميين.</p>
-            <div style="margin-top: 30px;">
-                <a href="index.html" style="background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: #ffffff; padding: 14px 40px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 20px rgba(139,92,246,0.4);">⬅️ العودة لغرفة الأخبار الرئيسية</a>
-            </div>
+        <header style="text-align: center; margin-top: 40px;">
+            <h1 class="main-title">🌌 وكالة الفضاء الكونى الكبرى</h1>
+            <p class="main-subtitle">أكبر تقارير رصد فلكي حقيقي بالصور الحية والخطوط العملاقة</p>
+            <a href="index.html" class="btn-back">⬅️ العودة للجريدة الرئيسية</a>
         </header>
 
-        <div class="space-card">
-            <span class="space-tag">الفيزياء الفلكية - عاجل</span>
-            <h2 style="color: #8b5cf6; margin: 0; font-size: 28px;">1. وحش أعماق المجرة: التقاط صورة تفصيلية لثقب أسود عملاق يلتهم نادراً نجمًا قريباً</h2>
-            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800" class="space-img" alt="ثقب أسود وسديم">
-            <p style="font-size: 18px; color: #f8fafc; font-weight: bold;">حدث كوني مهيب يرصده شبكة التليسكوبات الأرضية المتزامنة على أطراف الكوكب.</p>
-            <p style="color: #cbd5e1;">نجح علماء الفلك الدوليون في تسجيل رصد نادر جداً للحظات تمزق نجم ضخم واختفائه تماماً خلف أفق الحدث لثقب أسود هائل الحجم يقع في مركز مجرة تبعد عنا ملايين السنين الضوئية. جاذبية الثقب الأسود الخارقة قامت بسحب غازات النجم وتدويرها في قرص متوهج حرارته ملايين الدرجات، مما أدى لإنبعاث أشعة إكس قوية جداً استمرت لأسابيع كاملة أضاءت سماء الفلكيين.</p>
-            <div class="science-box">
-                🔭 <b>البيانات الفلكية الحقيقية:</b> حجم الثقب الأسود: 4 ملايين ضعف كتلة الشمس | المسافة: 26 ألف سنة ضوئية | الأداة المستخدمة: تليسكوب أفق الحدث (EHT).
+        <section>
+            <h2 class="section-title">1. التقرير السري للثقوب السوداء: رصد أضخم انفجار في تاريخ الكون الحديت</h2>
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200" class="giant-img" alt="ثقب أسود عملاق">
+            <div class="giant-report">
+                هذا هو التقرير العلمي الشامل والمباشر من مراصد الفلك الدولية؛ حيث تم رسمياً تسجيل لقطات حية ومذهلة لأكبر ثقب أسود في مركز المجرة السحيقة وهو يقوم بتمزيق نجم عملاق بالكامل. 
+                الجاذبية الخارقة للثقب الأسود سحبت الغازات الملتهبة وصنعت دوامة ضوئية ضخمة جداً أضاءت الفضاء المحيط بها لعدة أسابيع متواصلة، مما أتاح للعلماء كتابة أدق تفاصيل كواليس الفيزياء الفلكية في العصر الحديث.
+                <span class="data-badge">📊 البيانات الفلكية الحقيقية الموثقة: حجم الثقب يساوي 4 ملايين ضعف كتلة الشمس بالكامل.</span>
             </div>
-        </div>
+        </section>
 
-        <div class="space-card">
-            <span class="space-tag" style="background: #3b82f6;">استكشاف المريخ</span>
-            <h2 style="color: #3b82f6; margin: 0; font-size: 28px;">2. بعثة كوكب المريخ: المركبة الآلية تعثر على مركبات عضوية معقدة تحت سطح الكوكب الأحمر</h2>
-            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800" class="space-img" alt="كوكب المريخ">
-            <p style="font-size: 18px; color: #f8fafc; font-weight: bold;">ناسا تعلن رسمياً عن تحليل العينات الصخرية المأخوذة من قاع بحيرة جيزيرو القديمة.</p>
-            <p style="color: #cbd5e1;">في مؤتمر صحفي عالمي، أكد فريق مهندسي الفضاء أن الذراع الآلية للمركبة الجوالة نجحت في حفر صخور رسوبية يبلغ عمرها 3.5 مليار سنة. التحليل الكيميائي داخل المعمل المصغر للمركبة أظهر وجود جزيئات تحتوي على الكربون والهيدروجين، وهي اللبنات الأساسية التي يبحث عنها العلماء لإثبات ما إذا كان المريخ قد احتوى على حياة ميكروبية قديمة جداً في ماضيه الرطب والغني بالمياه العذبة.</p>
-            <div class="science-box">
-                🤖 <b>حالة البعثة الحالية:</b> اسم المركبة: بيرسيفيرانس (Perseverance) | عمق الحفر: 5 سنتيمترات | نسبة نجاح التحليل: 98.4%.
+        <section>
+            <h2 class="section-title">2. تقرير رحلة كوكب المريخ: العثور على مياه متجمدة تحت التربة الحمراء</h2>
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=1200" class="giant-img" alt="سطح المريخ الحقيقي">
+            <div class="giant-report">
+                أعلنت وكالة ناسا الدولية في بيان عاجل وضخم عن قيام الروبوت الجوال بيرسيفيرانس بعمليات حفر عميقة في قاع البحيرة الجافة القديمة على سطح كوكب المريخ الأحمر. 
+                التحاليل الميكانيكية والكيميائية الدقيقة أكدت وجود طبقات ضخمة من الجليد والمياه المتجمدة والمركبات العضوية المعقدة تحت السطح مباشرة، مما يشير بقوة إلى أن الكوكب كان مليئاً بالحياة العذبة والمجاري المائية الجارية منذ الملايين من السنين.
+                <span class="data-badge">🤖 حالة الروبوت الحالية: يعمل بكفاءة 100% ويستمر في إرسال الصور الضخمة للأرض.</span>
             </div>
-        </div>
+        </section>
 
-        <div class="space-card">
-            <span class="space-tag" style="background: #ec4899;">تليسكوبات فضائية</span>
-            <h2 style="color: #f43f5e; margin: 0; font-size: 28px;">3. عين جيمس ويب: صور مذهلة بأشعة تحت الحمراء تكشف حضانات النجوم الأولى في الكون</h2>
-            <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800" class="space-img" alt="سديم ومجرات تليسكوب جيمس ويب">
-            <p style="font-size: 18px; color: #f8fafc; font-weight: bold;">التليسكوب الأغلى في التاريخ يخترق الغبار الكوني السحيق ليعيد كتابة فصول نشأة الكون.</p>
-            <p style="color: #cbd5e1;">أرسل مرصد جيمس ويب الفضائي دفعة جديدة من الصور فائقة الوضوح لأعمدة الخلق وسديم الجبار. الصور أظهرت آلاف النجوم الوليدة التي لم تكن مرئية من قبل لأي تليسكوب بشري، حيث تظهر كأقراص متوهجة من الغاز والرماد الكوني وهي تتجمع لتصنع مجموعات شمسية جديدة تماماً قد تحتوي مستقبلاً على كواكب صخرية شبيهة بالأرض.</p>
-            <div class="science-box">
-                🛰️ <b>مواصفات الرصد الفني:</b> الطول الموجي المستخدم: الأشعة تحت الحمراء القريبة | حرارة مرآة التليسكوب: 233 درجة تحت الصفر لضمان دقة الرصد.
+        <section>
+            <h2 class="section-title">3. عين جيمس ويب: التقاط أوضح صور للمجرات الأولى التي ولدت بعد الانفجار العظيم</h2>
+            <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=1200" class="giant-img" alt="مجرات جيمس ويب الفضائية">
+            <div class="giant-report">
+                اخترق تليسكوب جيمس ويب الفضائي الأغلى والأضخم في تاريخ البشرية جدران الغبار الكوني السحيق ليرسل صوراً حية وحقيقية لأعمدة الخلق وحضانات النجوم الأولى. 
+                الصور تظهر بحجم كامل وواضح جداً يوضح كيفية تجمع ذرات الهيدروجين والرماد الفضائي لتشكيل مجموعات شمسية جديدة تماماً وكواكب صخرية قد تكون صالحة لاستقبال حياة بشرية مستقبلاً.
+                <span class="data-badge">🛰️ تقنية الرصد المستعملة: الأشعة تحت الحمراء العميقة لاختراق غبار الفضاء.</span>
             </div>
-        </div>
+        </section>
 
-        <div class="space-card">
-            <span class="space-tag" style="background: #10b981;">البحث عن كواكب بديلة</span>
-            <h2 style="color: #10b981; margin: 0; font-size: 28px;">4. الأرض الثانية: اكتشاف كوكب صخري يقع في "المنطقة الصالحة للحياة" حول نجم مجاور</h2>
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" class="space-img" alt="كوكب فضائي شبيه بالأرض">
-            <p style="font-size: 18px; color: #f8fafc; font-weight: bold;">علماء فلك يرصدون الغلاف الجوي لكوكب خارج المجموعة الشمسية يبعد 40 سنة ضوئية فقط.</p>
-            <p style="color: #cbd5e1;">باستخدام طريقة العبور الفلكية، رصدت المراصد الدولية كوكباً صخرياً حجمه يقارب حجم الأرض بمرة ونصف. الكوكب يدور حول نجمه في مسافة تسمح بوجود المياه السائلة على سطحه دون أن تتبخر أو تتجمد. المؤشرات الأولية لطيف الضوء المار عبر غلافه الجوي تشير إلى احتمالية وجود بخار الماء والنيتروجين، مما يجعله الهدف الأول للبعثات الدراسية القادمة لدراسة المؤشرات الحيوية.</p>
-            <div class="science-box">
-                🪐 <b>بطاقة تعريف الكوكب الكوني:</b> الاسم الرمزي: Exo-Kepler 452b | طول السنة عليه: 130 يوماً أرضياً | الجاذبية: 1.2 من جاذبية الأرض.
-            </div>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag" style="background: #f59e0b; color: #000;">رحلات مأهولة بشرية</span>
-            <h2 style="color: #f59e0b; margin: 0; font-size: 28px;">5. العودة إلى القمر: الإعلان عن أسماء رواد الفضاء المشاركين في بعثة "أرتميس" التاريخية</h2>
-            <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=800" class="space-img" alt="رواد فضاء وصاروخ">
-            <p style="color: #cbd5e1;">أعلنت وكالات الفضاء الدولية رسمياً عن قائمة الرواد الأربعة الذين سيقودون أول رحلة بشرية تطير حول القمر وتطأ أقدامهم السطح الفضي منذ أكثر من نصف قرن. البعثة تهدف لبناء محطة دولية دائمة على القطب الجنوبي للقمر لاستخراج جليد المياه واستخدامه كوقود لرحلات الفضاء العميقة نحو المريخ مستقبلاً وسط تجهيزات هندسية غير مسبوقة لبناء المستعمرات المغلقة.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">أسرار الشمس</span>
-            <h2 style="color: #ef4444; margin: 0; font-size: 28px;">6. العواصف الشمسية الكبرى: رصد ثوران مغناطيسي هائل قد يؤثر على شبكات الاتصالات الأرضية</h2>
-            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800" class="space-img" alt="الشمس وانفجار شمسي">
-            <p style="color: #cbd5e1;">أصدر مركز التنبؤ بالطقس الفضائي تحذيراً من الدرجة الثالثة بعد رصد انبعاث كتلي إكليلي ضخم من سطح الشمس متجهاً مباشرة نحو الأرض. هذا الانفجار المغناطيسي الهائل يحمل مليارات الأطنان من البلازما المشحونة التي ستضرب الغلاف الجوي، صانعة ظاهرة الشفق القطبي الساحرة ومسببة تشويشاً مؤقتاً على إشارات الراديو والأقمار الصناعية بنظام تحديد المواقع GPS.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">المجرات البعيدة</span>
-            <h2 style="color: #a855f7; margin: 0; font-size: 28px;">7. تصادم العمالقة: مجرة أندرو ميدا تبدأ سحب أطراف مجرتنا "درب التبانة" في رقصة كونية</h2>
-            <img src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?w=800" class="space-img" alt="مجرة درب التبانة">
-            <p style="color: #cbd5e1;">أظهرت الحسابات الرياضية والمحاكاة الحاسوبية الفائقة أن مجرة أندرو ميدا المجاورة بدأت بالفعل في التأثير بجاذبيتها على النجوم الخارجية لمجرتنا درب التبانة. التصادم الفعلي الكامل سيحدث بعد مليارات السنين ليصنع مجرة عملاقة واحدة جديدة، والعلماء يؤكدون أن المسافات الشاسعة الفارغة بين النجوم ستجعل من النادر جداً تصادم نجمين بشكل مباشر أثناء هذه الملحمة.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">مستقبل السياحة</span>
-            <h2 style="color: #06b6d4; margin: 0; font-size: 28px;">8. فنادق المدار: شركة الفضاء الدولية تبدأ تصنيع أول محطة سياحية دوارة في مدائن الأرض</h2>
-            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800" class="space-img" alt="محطة فضاء دولية فوق الأرض">
-            <p style="color: #cbd5e1;">بدأت خطوط الإنتاج الهندسية في تجميع وحدات محطة الفضاء السياحية الأولى من نوعها، والتي ستعتمد على الدوران الذاتي السريع حول نفسها لتوليد جاذبية اصطناعية خفيفة تشبه جاذبية القمر، مما يسمح للزوار والباحثين بتناول الطعام والنوم بشكل طبيعي جداً والاستمتاع بإطلالة أسطورية على كوكب الأرض على مدار الساعة من النوافذ العملاقة.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">صائدو الكويكبات</span>
-            <h2 style="color: #10b981; margin: 0; font-size: 28px;">9. مهمة حماية الأرض: نجاح تجربة تحويل مسار كويكب صخري عبر صدمة صاروخية متعمدة</h2>
-            <img src="https://images.unsplash.com/photo-1614314169000-4cf229a1fa33?w=800" class="space-img" alt="كويكب في الفضاء العميق">
-            <p style="color: #cbd5e1;">أثبتت البشرية لأول مرة قدرتها على الدفاع عن نفسها ضد مخاطر الفضاء، حيث نجحت مركبة فضائية من توجيه ضربة دقيقة مباشرة لصخرة كويكب ضخم يسير بسرعة آلاف الأميال. الصدمة المتعمدة أدت إلى تغيير طفيف لكنه كافٍ جداً في مساره ومداره الفلكي، مما يفتح الباب لتأمين الكوكب تماماً ضد أي اصطدامات كارثية مستقبلية كالتي قضت على الديناصورات قديمًا.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">أعماق المشتري</span>
-            <h2 style="color: #f59e0b; color: #000;">10. لغز البقعة الحمراء الكبرى: مسبار فلكي يخترق الغيوم الغازية لأضخم كواكب النظام الشمسي</h2>
-            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?w=800" class="space-img" alt="كوكب المشتري">
-            <p style="color: #cbd5e1;">أرسل مسبار الفضاء الطائر بيانات مذهلة بعد اقترابه الشديد من البقعة الحمراء العملاقة لكوكب المشتري، وهي الإعصار الأكبر في النظام الشمسي الممتد منذ مئات السنين. البيانات كشفت أن جذور هذا الإعصار تمتد لعمق 300 كيلومتر داخل الغلاف الغازي الكثيف للكوكب، وأن الرياح هناك تسير بسرعة جنونية تتخطى 600 كيلومتر في الساعة الواحدة.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">11. زحل والترصيع الكوني</span>
-            <p style="color: #cbd5e1;"><b>11. حلقات زحل تختفي تدريجياً:</b> أثبتت الدراسات الفلكية أن الجاذبية الشديدة لكوكب زحل تقوم بسحب الحلقات الجليدية الرائعة نحو قلب الكوكب على شكل أمطار ثلجية كثيفة، والعلماء يتوقعون زوالها تماماً بعد ملايين السنين.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">12. تعدين الكويكبات</span>
-            <p style="color: #cbd5e1;"><b>12. كويكب من الذهب الخالص:</b> رصدت المراصد الفضائية كويكباً صخرياً غنياً بالمعادن النادرة والثمينة كالبلاتين والذهب، بقيمة تقديرية فلكية تتجاوز اقتصاد كوكب الأرض بأكمله، مما يشعل سباق التعدين الفضائي بين الدول.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">13. بلوتو المتجمد</span>
-            <p style="color: #cbd5e1;"><b>13. قلب بلوتو النابض:</b> كشفت لقطات مقربة لكوكب بلوتو القزم عن وجود جبال ثلجية ضخمة من النيتروجين المتجمد تتخذ شكل قلب كبير، وتتحرك ببطء شديد كالأنهار الجليدية نتيجة الحرارة الداخلية الخفيفة للكوكب المعزول.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">14. الطاقة المظلمة</span>
-            <p style="color: #cbd5e1;"><b>14. تمدد الكون المتسارع:</b> أكد علماء الفيزياء النظرية أن المادة المظلمة والطاقة المظلمة تشكلان 95% من حجم الكون السحيق، وهما القوة الغامضة التي تدفع المجرات للتباعد عن بعضها بسرعة تتخطى سرعة الضوء بالأطراف.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">15. قمر أوروبا المحيطي</span>
-            <p style="color: #cbd5e1;"><b>15. محيطات تحت الجليد:</b> أرسلت ناسا بعثة مخصصة لقمر "أوروبا" التابع للمشتري بعد تأكيدات بوجود محيط مائي سائل شاسع وعميق تحت قشرته الجليدية السميكة، قد يحتوي على بيئة حرارية مثالية لنمو الأحياء المائية الفضائية.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">16. السدم الملونة</span>
-            <p style="color: #cbd5e1;"><b>16. سديم عين القط:</b> التقطت التليسكوبات لوحة فنية كونية لوفاة نجم متوسط الحجم، حيث قذف غازاته الخارجية الملونة بالهيدروجين والأكسجين صانعاً هالة ضوئية مبهرة تشبه أشكال الكائنات الحية بدقة متناهية العظمة.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">17. محطة الفضاء الصينية</span>
-            <p style="color: #cbd5e1;"><b>17. تجارب الهندسة الوراثية بالمدار:</b> نجح رواد الفضاء في محطة الفضاء الدولية الجديدة من زراعة محاصيل أرز وخضروات معدلة جينياً داخل بيئة انعدام الجاذبية، وحققت عينات المحاصيل نمواً أسرع بمرتين من مثيلتها الأرضية.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">18. نجوم النيوترون</span>
-            <p style="color: #cbd5e1;"><b>18. النجوم النابضة الفائقة الكثافة:</b> رصد مرصد فلكي نجماً نيوترونياً يدور حول نفسه 700 دورة في الثانية الواحدة. العلماء يوضحون أن ملعقة صغيرة واحدة من مادة هذا النجم تزن مليارات الأطنان بسبب الكثافة الفولاذية الخارقة للذرات.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">19. شراع ليزري</span>
-            <p style="color: #cbd5e1;"><b>19. السفر لأقرب نجم بسرعة الضوء:</b> بدأت تجارب إطلاق مركبات نانوية صغيرة جداً تعمل بالشراع الضوئي المدفوع بأشعة الليزر الأرضية، بهدف الوصول لمجموعة "ألفا قنطورس" النجمية خلال رحلة تستغرق 20 عاماً فقط بدلاً من آلاف السنين.</p>
-        </div>
-
-        <div class="space-card">
-            <span class="space-tag">20. نهاية الكون</span>
-            <p style="color: #cbd5e1;"><b>20. سيناريوهات التجمد الكبير:</b> وضع علماء الكونيات تقريراً شاملاً حول النهاية المتوقعة للكون بعد تريليونات السنين، حيث ستنطفئ آخر النجوم المشتعلة وتتحول كافة المجرات إلى رماد بارد ومظلم يتوسع في فراغ لا نهائي ساكن.</p>
-        </div>
-
-        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
-            <a href="index.html" style="background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: #ffffff; padding: 18px 45px; text-decoration: none; border-radius: 35px; font-weight: bold; font-size: 18px; box-shadow: 0 5px 20px rgba(139,92,246,0.4); display: inline-block;">⬅ Certified Back To Home Page</a>
+        <div style="text-align: center;">
+            <a href="index.html" class="btn-back">⬅️ إغلاق الأرشيف والعودة للرئيسية</a>
         </div>
 
     </div>
